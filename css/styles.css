@@ -1,0 +1,81 @@
+h1{
+    font-family: 'Didot';
+    font-size: 80px !important;
+    padding: 30px;
+    text-align: center;
+}
+h4{
+    font-family: 'Century Gothic';
+    font-size: 20px !important;
+    text-align: justify;
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+h2{
+    font-family: 'Palatino Linotype';
+    font-size: 50px !important;
+    color: #226b80;
+    padding-bottom: 15px;
+}
+h5{
+    font-family: 'Century Gothic';
+    font-size: 20px !important;
+}
+p{
+    font-family: 'Century Gothic';
+}
+
+/* Classes */
+
+.intro{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #ffeaa5;
+}
+
+    .intro-title{
+        justify-content: center;
+    }
+
+.adventures{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.about{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+    .about-info{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-img{
+        width: 40%;
+        float: left;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+
+        .emily-img{
+            width: 100%;
+        }
+
+    .about-text{
+        text-align: justify; 
+        padding-right: 50px;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .web-btn{
+        justify-items: center;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }

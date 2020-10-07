@@ -3,14 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Puff</title>
 
 </head>
 <body>
-
-    <h1>Hello World!</h1>
+    <!-- Nav Bar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Adventures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     
+
+    <!-- Introduction -->
+    <div class="container-fluid intro">
+        <div class="row intro-title">
+            <h1>Puff the Magic Dragon</h1>
+        </div>
+        <div class="intro-text">
+            <h4>to all the adventures that have come and gone, too wild for the mere likes of social media. 
+                to the times that fill the heart with awe and pride of the earth we're lucky enough to pass through.
+                to the friends loved, strangers met, and creatures noticed along the way.
+                leggo.
+            </h4>
+        </div>
+    </div>
+
+
+    <!-- Adventures -->
+    <div class="container-fluid adventures">
+        <div class="section-title">
+            <h2>Adventures</h2>
+        </div>
+        <div class="section-description">
+            <h5>Blah blah blah, these are adventures.</h5>
+        </div>
+        <div class="adventure-tiles">
+
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="col-4">
+                    <adventure-card 
+                        name="Park City" 
+                        image-link="images/utah/utah.jpeg"
+                        page-link="adventure.html"
+                    >
+                        <div slot="date">September, 2020</div>
+                        <div slot="details">The quarantine special: living with 3 guys in Park City Utah throughout the month of September.</div>
+                    </adventure-card>
+                </div>
+                <div class="col-4">
+                    <adventure-card
+                        name="Eastern Sierra" 
+                        image-link="images/sierra/sierra.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">May, 2020</div>
+                        <div slot="details">What a birthday present. The beauty of my home state, unnoticed by me for 20 years.</div>
+                    </adventure-card>
+                </div>
+                <div class="col-4">
+                    <adventure-card
+                        name="CA Coast" 
+                        image-link="images/coast/coast.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">July, 2020</div>
+                        <div slot="details">Short and sweet. A roadtrip up and down California's central coast.</div>
+                    </adventure-card>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="col-3">
+                    <adventure-card 
+                        name="Italy" 
+                        image-link="images/italy/italy.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">Summer, 2019</div>
+                        <div slot="details">Venice, Florence, Rome. Train rides and ferries through a country my far off ancestors called home.</div>
+                    </adventure-card>
+                </div>
+                <div class="col-3">
+                    <adventure-card
+                        name="Mojave" 
+                        image-link="images/mojave/mojave.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">February, 2020</div>
+                        <div slot="details">We ascended the tallest sand dune in view after a 5am wakeup call. I did it, knee brace and all. </div>
+                    </adventure-card>
+                </div>
+                <div class="col-3">
+                    <adventure-card
+                        name="Mt. Elbert" 
+                        image-link="images/elbert/elbert.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">June, 2019</div>
+                        <div slot="details">4am hardboiled eggs, singing strangers, and a 14er climbed alongside family.</div>
+                    </adventure-card>
+                </div>
+                <div class="col-3">
+                    <adventure-card
+                        name="Ice Canyon" 
+                        image-link="images/ice-canyon/ice-canyon.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">February, 2019</div>
+                        <div slot="details">A spontaneous hike turned snow storm turned cold trek back to the car. Wonderful.</div>
+                    </adventure-card>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="col-4">
+                    <adventure-card 
+                        name="Iceland" 
+                        image-link="images/iceland/iceland.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">June, 2017</div>
+                        <div slot="details">A journey to the place that inspired my music taste without me even knowing. (Of Monsters and Men rock).</div>
+                    </adventure-card>
+                </div>
+                <div class="col-4">
+                    <adventure-card
+                        name="Japan" 
+                        image-link="images/japan/japan.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">November, 2017</div>
+                        <div slot="details">Crowds and candy and trains and trees. An unforgettable exposure to a new culture.</div>
+                    </adventure-card>
+                </div>
+                <div class="col-4">
+                    <adventure-card
+                        name="Evie's Cabin" 
+                        image-link="images/cabin/cabin.jpeg"
+                        page-link="https://www.pomona.edu/"
+                    >
+                        <div slot="date">July, 2018</div>
+                        <div slot="details">A breath of fresh air. What inspired my study of Environmental Analysis, and reminded me of my appreciation for the earth.</div>
+                    </adventure-card>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    
+    <script src="adventureCard.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
