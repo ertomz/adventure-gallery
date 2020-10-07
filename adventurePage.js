@@ -1,3 +1,7 @@
+// Testing
+// Trying to make this page reusable
+
+
 // Template
 const template = document.createElement('template');
 // Add styling here so it only affects this component
@@ -8,7 +12,7 @@ template.innerHTML = `
 
     <div class="adventure-page">
         <div class="img-container">
-            <h3></h3>
+            <h2></h2>
         </div>
         <div class="info">
             <p><slot name="date" /></p>
@@ -25,8 +29,10 @@ class AdventurePage extends HTMLElement {
         this.attachShadow({ mode: 'open' }); // Shadow DOM
         this.shadowRoot.appendChild(template.content.cloneNode(true)); // Returns copy of node from template
         // Get items from the template and set values
-        this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
+        // this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
 
+        var adventureName = sessionStorage.getItem('name-array');;
+        this.shadowRoot.querySelector('h2').innerText = adventureName;
 
     }
 }

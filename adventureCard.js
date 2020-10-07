@@ -62,6 +62,8 @@ class AdventureCard extends HTMLElement {
         this.shadowRoot.querySelector('a').href = this.getAttribute('page-link');
         // this.shadowRoot.querySelector('a').setAttribute(name, 'name');
 
+        // Save respective info whenever a card is rendered
+        // alert(this.getAttribute('name'));
 
     }
 }
