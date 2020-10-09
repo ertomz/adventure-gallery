@@ -10,7 +10,7 @@ template.innerHTML = `
             left: 25%;
             top: 25%;
             font-size: 20px;
-            font-family: 'Geneva';
+            font-family: 'Geneva'; 
         }
         .adventure-card{
             font-family: 'Didot', sans-serif;
