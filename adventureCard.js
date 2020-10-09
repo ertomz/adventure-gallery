@@ -7,16 +7,16 @@ template.innerHTML = `
             color: white;
             text-shadow: 1px 1px gray;
             position: absolute;
-            left: 33%;
-            top: 33%;
+            left: 25%;
+            top: 25%;
             font-size: 20px;
+            font-family: 'Geneva';
         }
         .adventure-card{
             font-family: 'Didot', sans-serif;
             margin-top: 30px;
             margin-bottom: 30px;
             // border-top: #aacdbe 5px solid;
-            // height: 400px;
         }
         .adventure-img{
             width: 100%;
@@ -24,9 +24,14 @@ template.innerHTML = `
         }
         .img-container{
             position: relative;
+            text-align: center;
         }
-        .adventure-img:hover {
-            opacity: 0.8;
+        .adventure-card:hover h3{
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .adventure-card:hover img{
+            opacity: 1;
             transition: opacity .4s;
         }
 
@@ -60,6 +65,7 @@ class AdventureCard extends HTMLElement {
         this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
         this.shadowRoot.querySelector('img').src = this.getAttribute('image-link');
         this.shadowRoot.querySelector('a').href = this.getAttribute('page-link');
+
         // this.shadowRoot.querySelector('a').setAttribute(name, 'name');
 
         // Save respective info whenever a card is rendered
