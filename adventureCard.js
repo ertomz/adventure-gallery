@@ -45,9 +45,9 @@ template.innerHTML = `
         </div>
     </div>
 
-    <script src="adventurePage.js"></script>
-
 `;
+
+
 
 // Adventure card class
 class AdventureCard extends HTMLElement {
