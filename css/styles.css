@@ -110,3 +110,11 @@ p{
 .description{
     padding: 20px !important;
 }
+
+
+/* Park City */
+
+.pano-img{
+    height: 100%;
+    max-width: 100%;
+}
