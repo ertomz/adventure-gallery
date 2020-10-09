@@ -3,28 +3,28 @@ const template = document.createElement('template');
 // Add styling here so it only affects this component
 template.innerHTML = `
     <style>
-        h3{
-            color: white;
-            text-shadow: 1px 1px gray;
-            position: absolute;
-            left: 25%;
-            top: 25%;
-            font-size: 20px;
-            font-family: 'Geneva'; 
-        }
         .adventure-card{
             font-family: 'Didot', sans-serif;
             margin-top: 30px;
             margin-bottom: 30px;
-            // border-top: #aacdbe 5px solid;
         }
         .adventure-img{
             width: 100%;
-            opacity: 0.5;
+            opacity: 0.7;
         }
         .img-container{
             position: relative;
+            background-color: black;
             text-align: center;
+        }
+        .img-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: 	#F5F5F5;
+            font-size: 20px;
+            font-family: 'Geneva'; 
         }
         .adventure-card:hover h3{
             opacity: 0;
@@ -38,12 +38,14 @@ template.innerHTML = `
     </style>
 
     <div class="adventure-card">
-        <div class="img-container">
-            <a>
+        <a>
+            <div class="img-container">
                 <img class="adventure-img"/>
-                <h3></h3>
-            </a>
-        </div>
+                <div class="img-text">
+                    <h3></h3>
+                </div>
+            </div>
+        </a>
         <div class="info">
             <p><slot name="date" /></p>
             <p><slot name="details"/></p>
